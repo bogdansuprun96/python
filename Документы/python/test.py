@@ -150,3 +150,32 @@ s = "Hello Python"
 
 for i in range(0, len(s)):
     print(s[i], end=" ")
+
+print("\n")
+
+for ch in s:
+    print(ch, end="")
+
+s = set([2,4,1])
+print("\n")
+
+# print(type(s))
+
+if 5 in s:
+    print(True)
+elif 4 in s:
+    print("Yes")
+else:
+    print(False)
+
+# print(type(True))
+
+if 1 >= 1 and 2 <= 2 or 3==4:
+    print(True)
+
+n = "bohdan"
+
+s = "Hello " + n
+
+if "Hello" in s:
+    print(s)
