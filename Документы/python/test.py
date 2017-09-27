@@ -202,3 +202,36 @@ print(l)
 print(l[::2])
 
 print(s[-1:])
+
+data = {
+    'seq': [],
+    'id': 1,
+    'keys': {}
+}
+
+print(data['seq'])
+
+a = 55
+b = 45
+
+def func(a, b):
+    def sum(a, b):
+        return a + b
+    print(sum(a, b))
+
+func(a, b)
+
+functions = [func, func, func]
+
+for f in functions:
+    f(2,2)
+
+
+sum = lambda a, b: a + b
+
+print(sum(5,4))
+
+max = lambda a, b: a if a >= b else b
+
+print(max(4, 5))
+
