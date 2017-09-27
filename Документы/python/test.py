@@ -235,3 +235,45 @@ max = lambda a, b: a if a >= b else b
 
 print(max(4, 5))
 
+import lib
+a = 13
+b = 14
+res = lib.sum(a, b)
+
+print(res)
+
+from math import cos
+
+# import math as MATH
+
+print(cos(0))
+
+new_sum = lib.sum
+
+print(new_sum(a, b))
+
+import re as RegEx
+
+xml = '''
+    <b>
+        <spa n style="">Text</span>
+    </b>
+    <br/>
+        <span>Text</span>
+    <b>
+        <s pan type="6">Text</span>
+    </b>
+'''
+
+
+
+result = RegEx.findall('<\w+ \w+', xml)
+print(result)
+
+# result = RegEx.findall('<\w+ \w+ .*', xml)
+# print(result)
+
+for s in result:
+    xml = xml.replace(s, s.replace(" ", ""))
+
+print(xml)
