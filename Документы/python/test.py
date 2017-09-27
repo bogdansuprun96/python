@@ -179,3 +179,26 @@ s = "Hello " + n
 
 if "Hello" in s:
     print(s)
+
+index = 0
+while True:
+    if index == 10:
+        break
+    else:
+        print(index, end=" ")
+        index += 1
+
+print("\n\n\n")
+
+s = "Hello Python!"
+
+print(s[0])
+print(s[0:5])
+print(s[::2])
+# print(s[0:5:2])
+
+l = list(range(0, 10))
+print(l)
+print(l[::2])
+
+print(s[-1:])
